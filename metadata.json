@@ -1,0 +1,6 @@
+{
+  "name": "Walpola Sri Rathanasara school",
+  "description": "Official website of Walpola Sri Rathanasara school, Baddegama. Featuring academic streams, school history, principal's welcome, latest news, and an interactive admissions portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
