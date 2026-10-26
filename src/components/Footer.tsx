@@ -29,7 +29,7 @@ export default function Footer({ setCurrentTab }: FooterProps) {
             Walpola Sri Rathanasara school
           </div>
           <p className="text-xs md:text-sm text-zinc-300 opacity-90 leading-relaxed max-w-sm">
-            Nurturing wisdom and building character to create the leaders of tomorrow. Our vision is to be the pinnacle of academic excellence and disciplined citizenship in the Southern Province.
+            Nurturing wisdom and building character to create the leaders of tomorrow. Our vision is to be the pinnacle of academic excellence and disciplined citizenship in the Western Province.
           </p>
         </div>
 
@@ -75,11 +75,11 @@ export default function Footer({ setCurrentTab }: FooterProps) {
           <ul className="flex flex-col gap-3 text-xs md:text-sm">
             <li className="flex gap-2.5 items-start">
               <MapPin className="h-4 w-4 text-[#ffe088] shrink-0 mt-0.5" />
-              <span className="text-zinc-300">Baddegama, Galle,<br />Sri Lanka</span>
+              <span className="text-zinc-300">Walpola, Gampaha,<br />Sri Lanka</span>
             </li>
             <li className="flex gap-2.5 items-center">
               <Phone className="h-4 w-4 text-[#ffe088] shrink-0" />
-              <span className="text-zinc-300 font-medium">+94 91 229 2345</span>
+              <span className="text-zinc-300 font-medium">+94 33 222 2345</span>
             </li>
             <li className="flex gap-2.5 items-center">
               <Mail className="h-4 w-4 text-[#ffe088] shrink-0" />
@@ -90,27 +90,40 @@ export default function Footer({ setCurrentTab }: FooterProps) {
           </ul>
         </div>
 
-        {/* Column 4: Map Representation (3 cols) */}
+        {/* Column 4: School Location (3 cols) */}
         <div className="lg:col-span-3 flex flex-col gap-3" id="footer-map-col">
-          <h4 className="font-semibold text-[#ffe088] uppercase tracking-widest text-xs md:text-sm">
-            School Location
-          </h4>
-          <div className="rounded-lg overflow-hidden border border-[#2f3e4c] h-36 relative group bg-slate-900/45">
-            <div className="w-full h-full bg-[#2f3e4c] flex flex-col items-center justify-center text-center p-4">
-              <Map className="h-6 w-6 text-[#ffe088] mb-1.5 animate-pulse" />
-              <p className="text-[10px] uppercase font-bold tracking-wider text-[#ffe088]">Baddegama Campus</p>
-              <p className="text-[9px] text-zinc-300 mt-0.5">Galle, Southern Province</p>
-              
-              <a 
-                href="https://maps.google.com/?q=Walpola+Sri+Rathanasara+school+Baddegama"
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-1 text-[11px] font-bold text-[#ffe088]"
-              >
-                Open Google Maps
-                <ArrowUpRight className="h-3 w-3" />
-              </a>
-            </div>
+          <div className="flex items-center justify-between">
+            <h4 className="font-semibold text-[#ffe088] uppercase tracking-widest text-xs md:text-sm">
+              School Location
+            </h4>
+            <span className="text-[10px] text-zinc-300 font-mono bg-[#2f3e4c]/80 px-2 py-0.5 rounded border border-[#ffe088]/20">
+              5WWC+Q7F, Gampaha
+            </span>
+          </div>
+          <div className="rounded-lg overflow-hidden border border-[#2f3e4c] shadow-md bg-slate-900/50">
+            <iframe
+              title="Sri Rathanasara Primary School, Gampaha"
+              src="https://maps.google.com/maps?q=Sri+Rathanasara+Primary+School,+5WWC%2BQ7F,+Gampaha&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="250"
+              style={{ border: 0, borderRadius: '8px' }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-[250px] block"
+            />
+          </div>
+          <div className="flex justify-between items-center text-[11px] text-zinc-300 pt-0.5">
+            <span>Sri Rathanasara Primary School</span>
+            <a 
+              href="https://maps.google.com/?q=5WWC%2BQ7F,+Gampaha"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[#ffe088] hover:underline inline-flex items-center gap-1 font-semibold"
+            >
+              Open in Maps
+              <ArrowUpRight className="h-3 w-3" />
+            </a>
           </div>
         </div>
 

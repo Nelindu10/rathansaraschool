@@ -12,12 +12,13 @@ export default function Hero({ setCurrentTab }: HeroProps) {
       {/* Background Image and Overlays */}
       <div className="absolute inset-0 z-0">
         <img 
-          alt="Walpola Sri Rathanasara school Campus" 
-          className="w-full h-full object-cover object-center"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2eH5N-572ZaMElZ95D0xOQF-GvEIarOWCAr24hoxINsUaqfCgTUdn1e86aErv1ogMmp8plJiGha1VzSRMuTkhG_f_dNkBKHRP0J3iNaQ8OVUILpKKm9nZ7SERkUsQGup8u-vDvGgro6KuPk9XH4cIQlBXqOjsAjnl_1bcR8CSB5MhkYbD9CyO7lZas2qpQVrgPa2PAHQDDlx-8599DPrIXdAEPxV5dzAWN0yTmroR4f-f7RLZQzapJeBIIBbWbwasMT5t0Rt4dGjb"
+          alt="Walpola Sri Rathanasara School Campus" 
+          className="w-full h-full object-cover object-[center_35%]"
+          src="/assets/aistudio/WhatsApp_Image_2026-10-26_at_18.10.27_13fa04bc.jpeg"
         />
-        {/* Elegant Maroon Gradient Overlay matching the design specifications */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#410000]/90 via-[#570000]/65 to-[#1a1c1c]/30"></div>
+        {/* Subtle dark/reddish gradient overlay ensuring text legibility while keeping the classrooms, tree, and Buddhist shrine visible */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#3b0000]/85 via-[#4a0000]/45 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/20"></div>
       </div>
 
       {/* Main Content */}
@@ -28,8 +29,8 @@ export default function Hero({ setCurrentTab }: HeroProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-[#ffe088] font-semibold text-xs md:text-sm uppercase tracking-widest bg-[#570000]/50 px-3 py-1 rounded-full border border-[#ffe088]/20 inline-block mb-4">
-              5WWC+Q7F, Gampaha
+            <span className="text-[#ffe088] font-semibold text-xs md:text-sm uppercase tracking-widest bg-[#570000]/70 px-3 py-1 rounded-full border border-[#ffe088]/20 inline-block mb-4 shadow-sm backdrop-blur-xs">
+              5WWC+Q7F, GAMPAHA
             </span>
           </motion.div>
 
