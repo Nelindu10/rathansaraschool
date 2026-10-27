@@ -5,7 +5,7 @@ import { NewsArticle } from '../types';
 
 export default function NewsSection() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState<'All' | 'Events' | 'Culture' | 'Arts'>('All');
+  const [selectedCategory, setSelectedCategory] = useState<'All' | 'Events' | 'Culture' | 'Arts' | 'Activity'>('All');
   const [activeArticle, setActiveArticle] = useState<NewsArticle | null>(null);
 
   const articles: NewsArticle[] = [
@@ -15,7 +15,7 @@ export default function NewsSection() {
       category: 'Events',
       date: 'March 15, 2024',
       description: 'A day of athletic prowess and sportsmanship as the four houses competed for the championship trophy.',
-      imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCOxpnOw8vpyPKsWncZE82ru2C-NXneygjRbZfzuMszMDxZHO5trS8jfU8ovg0eFvefphocEXwsa2bU4u5w39owJU5lIWa-KetN18jvwia-hG-kliX8iJvQCBVVNJeSQt6aijqAkx2GMTGBjthOKHjfVZgsMILwRPgSGE6CZji1wZgwh8l4FLuFYyDMLuvfBUu3Cs-XcC6TZ4lk2WN2svIZzrEYUwo2vUn94BNVOFVY5Pc66wPHC__T2FfgxCyH-GjT_ARD-LpdnnFW',
+      imageUrl: '/assets/aistudio/WhatsApp_Image_2026-10-27_at_08.41.38_6cae405b.jpeg',
       content: 'The Annual Inter-House Sports Meet 2024 of Walpola Sri Rathanasara school was held in grand style at the school grounds. The event was graced by eminent sports personalities and administrative officers. Students from all four houses (Rathanasara, Jayasinghe, Wijewardene, and Gamini) participated in track and field athletic events with high spirit and determination. Wijewardene House clinched the overall championship trophy with remarkable performances in middle-distance running, relays, and field events. The main highlight was the colorful march past and the band display which displayed absolute discipline.',
       readMoreUrl: 'https://www.facebook.com/share/v/19Lr3eBxoK/'
     },
@@ -25,18 +25,18 @@ export default function NewsSection() {
       category: 'Culture',
       date: 'May 22, 2024',
       description: 'The school community came together to celebrate light and wisdom with lantern making and dharma sermons.',
-      imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBuPJdbjvtLm8NmPMfHZIamEF3rdpnAltQZmjtVULbhsI_76JIen4-6bMRM8IV-dZ64ypxmafwi1fBg84NKG23-8f2IF6nawwlV3yUAVCpbDKTQIL2-ZBspvk1ploBFeQ8OY7AUTmCeI0SyVwJ1x9kXtK12W4OYbmNU4m_VvOPM4bp93VEAa4G49HPr_dZX8PrL2ZRKpDqiQt5xHvHWd_-wcVMxa4x9n2VPkfW2ll9SRbRRlahNi1A2iYRUAHyyPGcCWgMcyE7Tmb11',
+      imageUrl: '/assets/aistudio/WhatsApp_Image_2026-10-27_at_08.49.50_3e291367.jpeg',
       content: 'In commemoration of the birth, enlightenment, and passing of Lord Buddha, Walpola Sri Rathanasara school organized a series of religious activities. Under the guidance of our venerable school advisors, students constructed magnificent bamboo-structured Vesak lanterns that illuminated the entire school premises at dusk. A peaceful "Amisa Pooja" was held in the morning, followed by a profound Dharma Sermon delivered by a resident monk from the local temple. Parents and old boys of the school set up an ice-cream and herbal drink "Dansala" for the local community, promoting the spirit of giving and kindness.',
       readMoreUrl: 'https://www.facebook.com/share/p/1Be3qpYN8o/'
     },
     {
-      id: 'concert-harmonics-2024',
-      title: "Western Band Concert: 'Harmonics'",
-      category: 'Arts',
+      id: 'singithi-pola-2024',
+      title: 'Annual Singithi Pola (School Market)',
+      category: 'Activity',
       date: 'June 10, 2024',
-      description: 'Our award-winning Western Band delivered an unforgettable performance at the annual musical extravaganza.',
-      imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCeEYxR34f2Dn2zzBgLvBMmfUyXn5ZfXsU8YQ5s2qBnV2PlGKn2EOzkLV9fEAnzV3My7HaB8ntz1j9VpDlX7pJ0yedhVYvtrviEj1_BqdbUnBoSnW-_SXBthx3ftSurCOHxmz6GdwmiRlgI7Tkbn77kIEVpMoauWpcrUBLj09d39cuPDjgatVwqCYqgOSkhFHqcwRsOmyoIhCERIkER5leYGNlagXsbcAmkR99ELvmQw7QXj4xoLZQgRdjCxf7kT7ehUWRI3tzZ1UuO',
-      content: "'Harmonics 2024', the annual musical concert organized by the Western Band of Walpola Sri Rathanasara school, took place at the Galle Municipal Auditorium. The band showcased their exceptional skill, playing classic symphonies, traditional Sri Lankan orchestral pieces, and contemporary scores. The disciplined drill, perfect pitch, and beautiful synchronization of the brass, woodwind, and percussion sections captivated the audience. Distinguished alumni, musicians, and directors of education praised the band's standard, marking them as one of the elite school bands in the Southern Province."
+      description: 'Our primary students successfully organized a vibrant school market (Pola), selling fresh vegetables and local goods. This engaging practical activity helped them develop teamwork, communication, and basic mathematical skills in a fun environment.',
+      imageUrl: '/assets/aistudio/WhatsApp_Image_2026-10-27_at_08.56.16_9eebffd5.jpeg',
+      content: 'The Annual Singithi Pola (School Market) of Walpola Sri Rathanasara school was held with great enthusiasm and active participation from primary students, teachers, and parents. Stalls were arranged with fresh organic vegetables, leafy greens, traditional homemade foods, and crafts brought in by the children. Operating the stalls gave young learners an inspiring, hands-on opportunity to practice customer service, currency counting, teamwork, and communication in a lively and supportive environment.'
     }
   ];
 
@@ -51,6 +51,8 @@ export default function NewsSection() {
     switch (category) {
       case 'Events': return 'bg-[#570000] text-white';
       case 'Culture': return 'bg-[#735c00] text-[#ffe088]';
+      case 'Activity':
+      case 'ACTIVITY': return 'bg-[#1b5e20] text-white';
       case 'Arts': return 'bg-[#800000] text-white';
       default: return 'bg-zinc-100 text-zinc-800';
     }
@@ -74,7 +76,7 @@ export default function NewsSection() {
 
         {/* Dynamic Filters Interface */}
         <div className="flex flex-wrap gap-2 w-full md:w-auto" id="news-category-filters">
-          {(['All', 'Events', 'Culture', 'Arts'] as const).map((cat) => (
+          {(['All', 'Events', 'Culture', 'Activity'] as const).map((cat) => (
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
@@ -119,7 +121,7 @@ export default function NewsSection() {
               {/* Card Image */}
               <div className="aspect-video relative overflow-hidden bg-zinc-100">
                 <img 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                  className="w-full h-full object-cover object-[center_60%] group-hover:scale-105 transition-transform duration-500" 
                   alt={article.title}
                   src={article.imageUrl}
                 />
@@ -214,7 +216,7 @@ export default function NewsSection() {
                 <img 
                   src={activeArticle.imageUrl} 
                   alt={activeArticle.title} 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-[center_60%]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <button 

@@ -12,7 +12,7 @@ export interface AcademicStream {
 export interface NewsArticle {
   id: string;
   title: string;
-  category: 'Events' | 'Culture' | 'Arts';
+  category: 'Events' | 'Culture' | 'Arts' | 'Activity';
   date: string;
   description: string;
   imageUrl: string;
