@@ -52,12 +52,6 @@ export default function Footer({ setCurrentTab }: FooterProps) {
               Academics
             </button>
             <button 
-              onClick={() => handleLinkClick('history')}
-              className="text-zinc-300 hover:text-[#ffe088] transition-colors text-left flex items-center gap-1 cursor-pointer"
-            >
-              School History
-            </button>
-            <button 
               onClick={() => handleLinkClick('admissions')}
               className="text-zinc-300 hover:text-[#ffe088] transition-colors text-left flex items-center gap-1 cursor-pointer"
             >

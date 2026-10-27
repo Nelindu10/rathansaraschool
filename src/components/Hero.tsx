@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { GraduationCap, Landmark } from 'lucide-react';
+import { GraduationCap } from 'lucide-react';
 
 interface HeroProps {
   setCurrentTab: (tab: string) => void;
@@ -65,14 +65,6 @@ export default function Hero({ setCurrentTab }: HeroProps) {
             >
               <GraduationCap className="h-5 w-5 text-[#ffe088]" />
               Admissions Info
-            </button>
-            <button 
-              id="hero-history-btn"
-              onClick={() => setCurrentTab('history')}
-              className="border-2 border-white text-white hover:bg-white hover:text-[#570000] px-8 py-4 rounded-md font-bold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer"
-            >
-              <Landmark className="h-5 w-5" />
-              Explore Our History
             </button>
           </motion.div>
         </div>

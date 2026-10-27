@@ -6,7 +6,6 @@ import Stats from './components/Stats';
 import PrincipalWelcome from './components/PrincipalWelcome';
 import AcademicsTab from './components/AcademicsTab';
 import NewsSection from './components/NewsSection';
-import HistoryTab from './components/HistoryTab';
 import ContactTab from './components/ContactTab';
 import AdmissionsPortal from './components/AdmissionsPortal';
 import PortalTab from './components/PortalTab';
@@ -43,18 +42,6 @@ export default function App() {
             transition={{ duration: 0.4 }}
           >
             <AcademicsTab standalone={true} />
-          </motion.div>
-        );
-      case 'history':
-        return (
-          <motion.div
-            key="history"
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -15 }}
-            transition={{ duration: 0.4 }}
-          >
-            <HistoryTab />
           </motion.div>
         );
       case 'contact':

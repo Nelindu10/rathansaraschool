@@ -14,7 +14,6 @@ export default function Navbar({ currentTab, setCurrentTab }: NavbarProps) {
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'academics', label: 'Academics' },
-    { id: 'history', label: 'History' },
     { id: 'contact', label: 'Contact' },
   ];
 

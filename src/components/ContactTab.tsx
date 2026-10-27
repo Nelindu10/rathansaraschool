@@ -128,7 +128,7 @@ export default function ContactTab() {
           Contact Us &amp; Portals
         </h2>
         <p className="text-sm md:text-base text-[#5a413d] max-w-2xl mx-auto font-sans leading-relaxed">
-          Reach our academic office directly for admissions questions, history requests, or student portal assistance.
+          Reach our academic office directly for admissions questions, general inquiries, or student portal assistance.
         </p>
       </div>
 
