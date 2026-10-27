@@ -20,8 +20,8 @@ export default function Stats() {
       icon: Calendar,
     },
     {
-      value: 'Top 10',
-      label: 'National Rankers',
+      value: 'Excellence',
+      label: 'In Primary Education',
       icon: Award,
     },
   ];
@@ -43,7 +43,7 @@ export default function Stats() {
               <div className="bg-white/10 p-2.5 rounded-full mb-3 text-[#ffe088]">
                 <stat.icon className="h-5 w-5" />
               </div>
-              <div className="font-display text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#ffe088] leading-tight">
+              <div className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#ffe088] leading-tight">
                 {stat.value}
               </div>
               <div className="text-xs md:text-sm font-semibold text-zinc-300 uppercase tracking-widest mt-1 font-sans">
